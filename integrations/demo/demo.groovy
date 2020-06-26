@@ -11,7 +11,7 @@ import org.ini4j.*;
 import groovy.json.JsonOutput;
 
 if ( args.length == 0 ) {
-  println("usage: demo.groovy {laser_cfg_name}");
+  println("usage: demo.groovy {cfg_name}");
   system.exit(1);
 }
 else {
@@ -20,5 +20,8 @@ else {
 
 // Replace with args[0]
 // String laser_cfg='hbz'
-String laser_cfg=args[0]
+String cfg=args[0]
 
+
+FOLIOERMAgent.latestTitleChanges(cfg).each { erm_title ->
+}

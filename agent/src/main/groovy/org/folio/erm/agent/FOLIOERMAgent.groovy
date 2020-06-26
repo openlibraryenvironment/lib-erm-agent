@@ -13,9 +13,9 @@ import org.ini4j.*;
 import groovy.json.JsonOutput;
 
 
-public class AgentMain {
+public class FOLIOERMAgent {
 
-  public static void process(String[] args) {
+  public static void latestTitleChanges(cfg, action_closure) {
     if ( args.length < 1 ) {
       println("usage: AgentMain.groovy cfg_name");
       system.exit(1);
